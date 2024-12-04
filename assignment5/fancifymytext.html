@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+		 <script src="fancifymytext.js"></script>
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+		
+
+		<!-- Your UI controls go here -->
+		 <div class ="body">
+			<form>
+				<label for="txtbox">Text</label><br>
+			<div class="textbox">
+			<textarea id = "txtbox" rows="4" cols="40" placeholder="insert text here"></textarea>
+		</div>
+		<br>
+		<label>Fancify</label>
+		<div class="textbox2">
+			<button id="alert" onclick="showAlert()">Bigger!</button>
+			<input type="radio" id="fancy" onclick="addStyle()">FancySchmancy
+			<input type ="radio" id = "boring" onclick="removeStyle()">BoringBetty
+			<br>
+			<input type="radio" onclick="bold()"> OnChange
+			<button type="button" onclick="moo()">MOO!</button>
+		</div>
+	</form>
+</div>
+	</body>
+</html>
+
+<style>
+	 .textbox
+	{
+		border-style: solid;
+		width:20%;
+		height: 100px;
+		padding: 30px;
+		margin: auto;
+
+	}
+	.textbox2
+	{
+		border-style: solid;
+		width:20%;
+		height: 80px;
+		padding: 30px;
+		margin: auto;
+		font-size: 15px;
+		text-align:center
+
+	}
+	textarea
+	{
+		resize: none;
+	}
+	.body
+	{
+		font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		text-align:center;
+		font-size: 25px;
+	}
+</style>
+
